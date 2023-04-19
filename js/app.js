@@ -3872,26 +3872,6 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
-    const closeBanner = document.querySelector(".sale-header__close");
-    const buyButton = document.querySelector(".sale-header__button");
-    const saleBanner = document.querySelector(".header__sale");
-    const saleBannerNone = document.querySelector(".sale-header__none");
-    const heroBlock = document.querySelector(".hero-page__container");
-    closeBanner.addEventListener("click", (function() {
-        saleBanner.classList.add("_close-banner");
-        if (heroBlock) {
-            heroBlock.style.cssText = "padding-top: 100px;";
-            heroBlock.style.cssText = "min-height: 52.5vh;";
-        }
-    }));
-    buyButton.addEventListener("click", (function() {
-        saleBanner.classList.add("_close-banner");
-        if (heroBlock) {
-            heroBlock.style.cssText = "padding-top: 100px;";
-            heroBlock.style.cssText = "min-height: 52.5vh;";
-        }
-    }));
-    if (saleBannerNone) saleBannerNone.remove();
     window["FLS"] = true;
     isWebp();
     addLoadedClass();

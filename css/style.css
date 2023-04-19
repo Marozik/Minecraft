@@ -432,32 +432,6 @@ body::after {
   width: 100%;
 }
 
-.header__sale {
-  min-height: 3.75rem;
-  padding: 1.25rem 3.125rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #25615e;
-  position: relative;
-  z-index: 20;
-  text-align: center;
-}
-
-.header__sale._close-banner {
-  display: none;
-}
-
-.menu-open .header__sale {
-  display: none;
-}
-
 .header__inner {
   padding: 0.625rem 0rem;
   -webkit-transition: all 0.3s ease 0s;
@@ -523,138 +497,6 @@ body::after {
   transition: background-color 0.3s ease 0s;
   color: #fff;
   line-height: 1.2;
-}
-
-.sale-header__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.625rem;
-  color: #fff;
-  font-size: 0.9375rem;
-}
-
-.sale-header__text {
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-.sale-header__text span {
-  font-weight: 700;
-}
-
-.sale-header__text span:first-child {
-  text-transform: uppercase;
-}
-
-.sale-header__button {
-  background-color: #000;
-  font-family: inherit;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  border-radius: 4px;
-  padding: 0.40625rem 1.25rem;
-  -webkit-transition: -webkit-box-shadow 0.1s ease 0s;
-  transition: -webkit-box-shadow 0.1s ease 0s;
-  -o-transition: box-shadow 0.1s ease 0s;
-  transition: box-shadow 0.1s ease 0s;
-  transition: box-shadow 0.1s ease 0s, -webkit-box-shadow 0.1s ease 0s;
-  -webkit-animation: impulse 1s infinite ease alternate;
-          animation: impulse 1s infinite ease alternate;
-}
-
-@-webkit-keyframes impulse {
-  0% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-  }
-
-  10% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-  }
-
-  20% {
-    -webkit-transform: translateX(-2px);
-            transform: translateX(-2px);
-  }
-
-  30% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px);
-  }
-}
-
-@keyframes impulse {
-  0% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px);
-  }
-
-  10% {
-    -webkit-transform: translateX(3px);
-            transform: translateX(3px);
-  }
-
-  20% {
-    -webkit-transform: translateX(-2px);
-            transform: translateX(-2px);
-  }
-
-  30% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px);
-  }
-}
-
-.sale-header__close {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  width: 0.9375rem;
-  height: 0.9375rem;
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  -o-transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-}
-
-.sale-header__close::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0) rotate(35deg);
-      -ms-transform: translate(-50%, 0) rotate(35deg);
-          transform: translate(-50%, 0) rotate(35deg);
-  width: 0.0625rem;
-  height: 100%;
-  background-color: #000;
-}
-
-.sale-header__close::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0) rotate(-35deg);
-      -ms-transform: translate(-50%, 0) rotate(-35deg);
-          transform: translate(-50%, 0) rotate(-35deg);
-  width: 0.0625rem;
-  height: 100%;
-  background-color: #000;
 }
 
 .icon-menu {
@@ -2169,7 +2011,7 @@ body::after {
   }
 
   .hero-page__container {
-    min-height: 57vh;
+    min-height: 50vh;
   }
 
   .item-world__title {
@@ -2874,17 +2716,6 @@ body::after {
 }
 
 @media (max-width: 29.99875em) {
-  .header__sale {
-    padding: 1.5625rem 0.9375rem 0.9375rem;
-  }
-
-  .sale-header__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .hero-page__button {
     -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
@@ -3528,17 +3359,6 @@ body::after {
 
   .menu-right__link:hover {
     background-color: rgba(255, 255, 255, 0.13);
-  }
-
-  .sale-header__button:hover {
-    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  .sale-header__close:hover {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
   }
 
   .footer__link:hover {
